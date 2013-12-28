@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>分类搜索引擎</title>
+    <meta charset="utf-8">
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<style>
+    body {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+.form-search{
+    width:500px;
+    margin:0 auto
+}
+.form-search .form-group{
+    width:450px;
+    float:left;
+}
+.form-search input[type="text"]{
+    width:100%
+}
+.form-search input[type="submit"]{
+    width:50px;
+    float:left;
+}
+</style>
+<body>
+
+
+<div class="container">
+
+      <form class="form-search form-inline" role="form" action="/result" method="get">
+          <h2>分类搜索</h2>
+        <div class="form-group">
+            <input type="text" class="form-control" name="args" required="">
+        </div>
+            <input type="submit" class="btn btn-primary" value="搜索"/>
+      </form>
+    </div>
+</body>
+</html>
